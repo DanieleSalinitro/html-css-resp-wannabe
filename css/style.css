@@ -1,6 +1,6 @@
 /*************************************************
     GENERAL STYLES
- *************************************************/
+*************************************************/
 *,
 *::before,
 *::after {
@@ -43,7 +43,7 @@ img {
 
 /************************************************
     UTILITIES
- ************************************************/
+************************************************/
 
 /* LAYOUT */
 .container {
@@ -68,11 +68,11 @@ img {
 
 /************************************************
     SITE SECTIONS
- ************************************************/
+************************************************/
 
 /* HEADER */
 .site-header {
-    margin-top: 3rem;
+    padding-top: 3rem;
 }
 
 /* LESSONS SECTION */
@@ -109,7 +109,7 @@ img {
 
 /* WHY US SECTION */
 .why-us {
-    margin-bottom: 3rem;
+    padding-bottom: 3rem;
 }
 .why-us .col-left {
     width: 40%;
@@ -126,4 +126,44 @@ img {
 
 /************************************************
     SOLUZIONE RESPONSIVE
- ************************************************/
+************************************************/
+
+@media screen and (max-width: 768px)  {
+    .container{
+        width: 100%;
+        max-width: 600px;
+    }
+
+
+}
+
+@media screen and (max-width: 480px) {
+    .row{
+        flex-wrap: wrap;
+    }
+    .steps .col, .lessons .col {
+        width: 100%;
+    }
+    .card{
+        padding-bottom: 50px;
+    }
+
+    .why-us .col-left, .why-us .col-right{
+        width: 100%;
+    }
+
+    .why-us{
+        padding: 3em 0;
+        background-color: #222222;
+    }
+
+    .steps{
+        margin: 0;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1160px) {
+    .container{
+        width: 100%;
+    }
+}
