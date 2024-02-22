@@ -141,15 +141,14 @@ img {
     .row{
         flex-wrap: wrap;
     }
-    .steps .col, .lessons .col {
+    .steps .col,
+    .lessons .col,
+    .why-us .col-left,
+    .why-us .col-right {
         width: 100%;
     }
     .card{
         padding-bottom: 50px;
-    }
-
-    .why-us .col-left, .why-us .col-right{
-        width: 100%;
     }
 
     .why-us{
